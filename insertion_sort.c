@@ -47,3 +47,22 @@ void insertionSort(struct Node** head_ref) {
     *head_ref = sorted;
 }
 
+int main() {
+    struct Node* head = NULL;
+
+    push(&head, 5);
+    push(&head, 20);
+    push(&head, 4);
+    push(&head, 3);
+    push(&head, 30);
+
+    printf("Linked list before sorting:\n");
+    printList(head);
+
+    insertionSort(&head);
+
+    printf("Linked list after sorting:\n");
+    printList(head);
+
+    return 0;
+}
