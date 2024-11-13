@@ -63,6 +63,7 @@ int main() {
 
     printf("Linked list after sorting:\n");
     printList(head);
+    printf(".");
 
     return 0;
 }
