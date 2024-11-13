@@ -29,3 +29,22 @@ void printList(struct Node* node) {
     printf("\n");
 }
 
+int main() {
+    struct Node* head = NULL;
+
+    push(&head, 64);
+    push(&head, 25);
+    push(&head, 12);
+    push(&head, 22);
+    push(&head, 11);
+
+    printf("Linked list before sorting:\n");
+    printList(head);
+
+    selectionSort(head);
+
+    printf("Linked list after sorting:\n");
+    printList(head);
+
+    return 0;
+}
